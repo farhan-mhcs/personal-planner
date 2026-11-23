@@ -1,0 +1,9 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+:root{--bg:#fff;--card:#fff;--pri:#7c3aed;--onpri:#fff;--sec:#ede9fe;--tx:#1f2937;--mu:#6b7280;--bd:#e5e7eb}
+.dark{--bg:#101827;--card:#252F49;--pri:#F59E0B;--onpri:#111C32;--sec:#111C32;--tx:#F1F5F9;--mu:#94A3B8;--bd:#34405f}
+body{background:var(--bg);color:var(--tx);font-family:Vazirmatn,sans-serif;padding-top:env(safe-area-inset-top)}
+@layer components{
+.card{@apply bg-card border border-bd rounded-2xl p-4}
+.btn{@apply bg-pri text-onpri rounded-xl px-4 py-2 text-sm font-bold}
+.btn2{@apply bg-sec text-tx rounded-xl px-3 py-2 text-sm}
+.inp{@apply bg-bg text-tx border border-bd rounded-xl px-3 py-2 text-sm w-full}}
